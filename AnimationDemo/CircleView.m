@@ -13,6 +13,7 @@
 }
 
 @end
+
 @implementation CircleView
 
 #pragma mark --initialize Method
@@ -36,10 +37,11 @@
              , self.frame.size.height / 2.0, self.frame.size.height * 0.5 - 10, 0, 2*M_PI, 0.0);*/
 //    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2.0) radius:self.bounds.size.height / 2.0  startAngle:0 endAngle:2*M_PI clockwise:YES];
     UIBezierPath  *path = [UIBezierPath bezierPath];
+    //    [path addQuadCurveToPoint:CGPointMake(self.bounds.size.width, self.bounds.size.height) controlPoint:CGPointMake(self.bounds.size.width,0)];
     [path addArcWithCenter:CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2.0) radius:self.bounds.size.height / 2.0
                 startAngle:0
                   endAngle:2 * M_PI clockwise:YES];
-//    [path addQuadCurveToPoint:CGPointMake(self.bounds.size.width, self.bounds.size.height) controlPoint:CGPointMake(self.bounds.size.width,0)];
+    //圆形路径
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     animation.repeatCount = HUGE_VAL;
     animation.duration = 10.0;
@@ -47,9 +49,9 @@
     animation.path = path.CGPath;
     animation.removedOnCompletion = NO;
     animation.fillMode = kCAFillModeForwards;
-    
     [_dotView.layer  addAnimation:animation forKey:@"circleAnimation"];
     
+    //透明度
     CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
     opacityAnimation.repeatCount = HUGE_VAL;
     opacityAnimation.fromValue =@(1.0);
@@ -58,6 +60,7 @@
     opacityAnimation.removedOnCompletion = NO;
     opacityAnimation.fillMode  = kCAFillModeForwards;
     
+    //放大
     CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     scaleAnimation.repeatCount = HUGE_VAL;
     scaleAnimation.fromValue = @(0);
@@ -66,6 +69,7 @@
     scaleAnimation.removedOnCompletion = NO;
     scaleAnimation.fillMode = kCAFillModeForwards;
     
+    //动画组
     CAAnimationGroup *group = [CAAnimationGroup animation];
     group.animations = @[opacityAnimation,scaleAnimation];
     group.repeatCount = HUGE_VAL;
@@ -73,7 +77,6 @@
     group.speed =  5.0;
     group.removedOnCompletion = NO;
     group.fillMode = kCAFillModeForwards;
-    
     [self.layer addAnimation:group forKey:@"opacityAndScaleAnimation"];
 }
 

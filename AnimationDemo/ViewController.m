@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _circleView = [[CircleView alloc] initWithFrame:CGRectMake(100, 100, 150, 150)];
+    _circleView = [[CircleView alloc] initWithFrame:CGRectMake(100, 250, 150, 150)];
     [_circleView startAnimation];
     [self.view addSubview:_circleView];
 }
@@ -29,5 +29,4 @@
     NextVC *VC = [NextVC new];
     [self.navigationController pushViewController:VC animated:YES];
 }
-
 @end

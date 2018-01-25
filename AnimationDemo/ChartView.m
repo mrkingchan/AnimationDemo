@@ -15,8 +15,7 @@
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
         self.layer.borderWidth = 1.0;
-        self.layer.borderColor = [UIColor blackColor].CGColor;
-        
+        self.layer.borderColor = [UIColor blackColor].CGColor;   
     }
     return self;
 }
@@ -34,12 +33,15 @@
         CGContextMoveToPoint(ref, 0 , itemW * (i +1) +(i * 2));
         CGContextAddLineToPoint(ref, rect.size.width,itemW * (i +1) +(i * 2));
     }
+    
+    //对角线
+    CGContextMoveToPoint(ref, 0, 0);
+    CGContextAddLineToPoint(ref, rect.size.width, rect.size.height);
+    
+    CGContextMoveToPoint(ref, 0, rect.size.height);
+    CGContextAddLineToPoint(ref, rect.size.width, 0);
+    
     CGContextStrokePath(ref);
-    for (int i = 0; i < 9; i ++) {
-        for (int j = 0; j < 9; j++) {
-            
-        }
-    }
 }
 
 @end

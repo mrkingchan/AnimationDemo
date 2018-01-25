@@ -24,13 +24,19 @@
     CGContextRef ref = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(ref, 1.0);
     CGContextSetRGBStrokeColor(ref, 106/255.0, 106/255.0, 106/255.0, 1.0);
-    
     CGContextMoveToPoint(ref,10, rect.size.height / 2.0);
     CGContextAddLineToPoint(ref, rect.size.width - 10, rect.size.height / 2.0);
     
     CGContextMoveToPoint(ref, rect.size.width / 2.0,10);
     CGContextAddLineToPoint(ref, rect.size.width / 2.0, rect.size.height -10);
     
+    CGContextMoveToPoint(ref, 0, 0);
+    CGContextAddLineToPoint(ref, rect.size.width, rect.size.height);
+    
+    CGContextMoveToPoint(ref, 0, rect.size.height);
+    CGContextAddLineToPoint(ref, rect.size.width, 0);
+    
     CGContextStrokePath(ref);
+    
 }
 @end

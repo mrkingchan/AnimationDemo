@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D227C251201F171A00FCEB63 /* ShopCartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D227C250201F171A00FCEB63 /* ShopCartVC.m */; };
+		D227C254201F17B800FCEB63 /* ShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D227C253201F17B800FCEB63 /* ShopCell.m */; };
+		D227C258201F18BA00FCEB63 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = D227C257201F18BA00FCEB63 /* add.png */; };
 		D24D6C5D20186C6D00EED777 /* YesuView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D6C5C20186C6D00EED777 /* YesuView.m */; };
 		D24D6C602018726800EED777 /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D6C5F2018726800EED777 /* ChartView.m */; };
 		D24D6C632018ACDA00EED777 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D6C622018ACDA00EED777 /* Student.m */; };
@@ -42,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D227C24F201F171A00FCEB63 /* ShopCartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopCartVC.h; sourceTree = "<group>"; };
+		D227C250201F171A00FCEB63 /* ShopCartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopCartVC.m; sourceTree = "<group>"; };
+		D227C252201F17B800FCEB63 /* ShopCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopCell.h; sourceTree = "<group>"; };
+		D227C253201F17B800FCEB63 /* ShopCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopCell.m; sourceTree = "<group>"; };
+		D227C257201F18BA00FCEB63 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		D24D6C5B20186C6D00EED777 /* YesuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YesuView.h; sourceTree = "<group>"; };
 		D24D6C5C20186C6D00EED777 /* YesuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YesuView.m; sourceTree = "<group>"; };
 		D24D6C5E2018726800EED777 /* ChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartView.h; sourceTree = "<group>"; };
@@ -122,12 +130,17 @@
 		D2B84E392010895500D8A7A9 /* AnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D227C257201F18BA00FCEB63 /* add.png */,
 				D2B84E3A2010895500D8A7A9 /* AppDelegate.h */,
 				D2B84E3B2010895500D8A7A9 /* AppDelegate.m */,
 				D2B84E3D2010895500D8A7A9 /* ViewController.h */,
 				D2B84E3E2010895500D8A7A9 /* ViewController.m */,
 				D2B84E6C20108A4200D8A7A9 /* NextVC.h */,
 				D2B84E6D20108A4200D8A7A9 /* NextVC.m */,
+				D227C24F201F171A00FCEB63 /* ShopCartVC.h */,
+				D227C250201F171A00FCEB63 /* ShopCartVC.m */,
+				D227C252201F17B800FCEB63 /* ShopCell.h */,
+				D227C253201F17B800FCEB63 /* ShopCell.m */,
 				D24D6C612018ACDA00EED777 /* Student.h */,
 				D24D6C622018ACDA00EED777 /* Student.m */,
 				D2B84E6F20109C7600D8A7A9 /* CircleView.h */,
@@ -276,6 +289,7 @@
 				D2B84E472010895500D8A7A9 /* LaunchScreen.storyboard in Resources */,
 				D2B84E442010895500D8A7A9 /* Assets.xcassets in Resources */,
 				D2B84E422010895500D8A7A9 /* Main.storyboard in Resources */,
+				D227C258201F18BA00FCEB63 /* add.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +323,9 @@
 				D2B84E4A2010895500D8A7A9 /* main.m in Sources */,
 				D2B84E3C2010895500D8A7A9 /* AppDelegate.m in Sources */,
 				D2B84E6E20108A4200D8A7A9 /* NextVC.m in Sources */,
+				D227C251201F171A00FCEB63 /* ShopCartVC.m in Sources */,
 				D24D6C632018ACDA00EED777 /* Student.m in Sources */,
+				D227C254201F17B800FCEB63 /* ShopCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

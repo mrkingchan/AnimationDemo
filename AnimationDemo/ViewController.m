@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = NSStringFromClass([self class]);
     _circleView = [[CircleView alloc] initWithFrame:CGRectMake(100, 250, 150, 150)];
     [_circleView startAnimation];
     [self.view addSubview:_circleView];

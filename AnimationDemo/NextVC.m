@@ -13,6 +13,7 @@
 #import <sqlite3.h>
 #import "Student.h"
 #import "HeartView.h"
+#import "ShopCartVC.h"
 
 @interface NextVC ()<CAAnimationDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate> {
     BounceView *_subView;
@@ -29,6 +30,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.title = NSStringFromClass([self class]);
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"shoppingCart" style:UIBarButtonItemStylePlain target:self action:@selector(next:)];
     /*_subView = [[BounceView alloc] initWithFrame:CGRectMake(400, 200, 100, 40)];
     [self.view addSubview:_subView];
     
@@ -44,9 +47,9 @@
     [self sqliteAction];*/
     
     //心跳
-    _heartView = [[HeartView alloc] initWithFrame:CGRectMake(100, 100, 120, 120)];
-    [self.view addSubview:_heartView];
-    
+}
+
+- (void)animationWithHeartView:(HeartView *)heartView {
     CABasicAnimation *plusAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     plusAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     plusAnimation.duration = 1;
@@ -55,13 +58,16 @@
     plusAnimation.toValue = @(1.1);
     plusAnimation.repeatCount = HUGE_VAL;
     plusAnimation.removedOnCompletion = NO;
-    [_heartView.layer addAnimation:plusAnimation forKey:@"heartBeat"];
+    [heartView.layer addAnimation:plusAnimation forKey:@"heartBeat"];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
     CGPoint touchPoint = [touch locationInView:self.view];
-    [self chartViewStartAnimationWithPosition:touchPoint];
+//    [self chartViewStartAnimationWithPosition:touchPoint];
+    HeartView *heartView = [[HeartView alloc]initWithFrame:CGRectMake(touchPoint.x, touchPoint.y, 60, 60)];
+    [self.view addSubview:heartView];
+    [self  animationWithHeartView:heartView];
 }
 
 - (void)chartViewStartAnimationWithPosition:(CGPoint)position {
@@ -119,6 +125,12 @@
     group.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     
     [_chartView.layer addAnimation:group forKey:@"animationgroup"];
+}
+
+#pragma mark --private Method
+- (void)next:(id)sender {
+    ShopCartVC *VC = [ShopCartVC new];
+    [self.navigationController pushViewController:VC animated:YES];    
 }
 
 #pragma mark --private Method

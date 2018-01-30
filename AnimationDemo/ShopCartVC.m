@@ -8,6 +8,7 @@
 
 #import "ShopCartVC.h"
 #import "ShopCell.h"
+#import "PhotoVC.h"
 
 @interface ShopCartVC ()<UITableViewDelegate,UITableViewDataSource,CAAnimationDelegate> {
     UITableView *_tableView;
@@ -30,11 +31,18 @@
     [super viewDidLoad];
     self.navigationItem.title = NSStringFromClass([self class]);
     self.view.backgroundColor = [UIColor blackColor];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSStringFromClass([PhotoVC class]) style:UIBarButtonItemStylePlain target:self action:@selector(next:)];
+    
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64) style:0];
     _tableView.backgroundColor = [UIColor blackColor];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
+}
+
+- (void)next:(id)sender {
+    PhotoVC *VC = [PhotoVC new];
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 #pragma mark --UITableViewDataSource&Delegate

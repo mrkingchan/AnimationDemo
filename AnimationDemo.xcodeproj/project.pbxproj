@@ -14,6 +14,11 @@
 		D24D6C602018726800EED777 /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D6C5F2018726800EED777 /* ChartView.m */; };
 		D24D6C632018ACDA00EED777 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D6C622018ACDA00EED777 /* Student.m */; };
 		D24D6C662019B95400EED777 /* HeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D6C652019B95400EED777 /* HeartView.m */; };
+		D26B9A8120205ED600C36E7A /* PhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A8020205ED600C36E7A /* PhotoVC.m */; };
+		D26B9A84202060BD00C36E7A /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A83202060BD00C36E7A /* PhotoCell.m */; };
+		D26B9A87202067F700C36E7A /* PhotoGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A86202067F700C36E7A /* PhotoGroupVC.m */; };
+		D26B9A8A2020687400C36E7A /* GroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A892020687400C36E7A /* GroupCell.m */; };
+		D26B9A8D20206A3600C36E7A /* GroupDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A8C20206A3600C36E7A /* GroupDetailVC.m */; };
 		D2B84E3C2010895500D8A7A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B84E3B2010895500D8A7A9 /* AppDelegate.m */; };
 		D2B84E3F2010895500D8A7A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B84E3E2010895500D8A7A9 /* ViewController.m */; };
 		D2B84E422010895500D8A7A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B84E402010895500D8A7A9 /* Main.storyboard */; };
@@ -58,6 +63,16 @@
 		D24D6C622018ACDA00EED777 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		D24D6C642019B95400EED777 /* HeartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeartView.h; sourceTree = "<group>"; };
 		D24D6C652019B95400EED777 /* HeartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeartView.m; sourceTree = "<group>"; };
+		D26B9A7F20205ED600C36E7A /* PhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoVC.h; sourceTree = "<group>"; };
+		D26B9A8020205ED600C36E7A /* PhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoVC.m; sourceTree = "<group>"; };
+		D26B9A82202060BD00C36E7A /* PhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		D26B9A83202060BD00C36E7A /* PhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		D26B9A85202067F700C36E7A /* PhotoGroupVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoGroupVC.h; sourceTree = "<group>"; };
+		D26B9A86202067F700C36E7A /* PhotoGroupVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoGroupVC.m; sourceTree = "<group>"; };
+		D26B9A882020687400C36E7A /* GroupCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupCell.h; sourceTree = "<group>"; };
+		D26B9A892020687400C36E7A /* GroupCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupCell.m; sourceTree = "<group>"; };
+		D26B9A8B20206A3600C36E7A /* GroupDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupDetailVC.h; sourceTree = "<group>"; };
+		D26B9A8C20206A3600C36E7A /* GroupDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupDetailVC.m; sourceTree = "<group>"; };
 		D2B84E372010895500D8A7A9 /* AnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B84E3A2010895500D8A7A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D2B84E3B2010895500D8A7A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,6 +154,16 @@
 				D2B84E6D20108A4200D8A7A9 /* NextVC.m */,
 				D227C24F201F171A00FCEB63 /* ShopCartVC.h */,
 				D227C250201F171A00FCEB63 /* ShopCartVC.m */,
+				D26B9A7F20205ED600C36E7A /* PhotoVC.h */,
+				D26B9A8020205ED600C36E7A /* PhotoVC.m */,
+				D26B9A85202067F700C36E7A /* PhotoGroupVC.h */,
+				D26B9A86202067F700C36E7A /* PhotoGroupVC.m */,
+				D26B9A8B20206A3600C36E7A /* GroupDetailVC.h */,
+				D26B9A8C20206A3600C36E7A /* GroupDetailVC.m */,
+				D26B9A882020687400C36E7A /* GroupCell.h */,
+				D26B9A892020687400C36E7A /* GroupCell.m */,
+				D26B9A82202060BD00C36E7A /* PhotoCell.h */,
+				D26B9A83202060BD00C36E7A /* PhotoCell.m */,
 				D227C252201F17B800FCEB63 /* ShopCell.h */,
 				D227C253201F17B800FCEB63 /* ShopCell.m */,
 				D24D6C612018ACDA00EED777 /* Student.h */,
@@ -317,12 +342,17 @@
 				D24D6C5D20186C6D00EED777 /* YesuView.m in Sources */,
 				D2B84E742011989D00D8A7A9 /* BounceView.m in Sources */,
 				D2B84E3F2010895500D8A7A9 /* ViewController.m in Sources */,
+				D26B9A8D20206A3600C36E7A /* GroupDetailVC.m in Sources */,
+				D26B9A8A2020687400C36E7A /* GroupCell.m in Sources */,
 				D24D6C662019B95400EED777 /* HeartView.m in Sources */,
 				D24D6C602018726800EED777 /* ChartView.m in Sources */,
 				D2B84E7120109C7600D8A7A9 /* CircleView.m in Sources */,
+				D26B9A8120205ED600C36E7A /* PhotoVC.m in Sources */,
 				D2B84E4A2010895500D8A7A9 /* main.m in Sources */,
 				D2B84E3C2010895500D8A7A9 /* AppDelegate.m in Sources */,
+				D26B9A87202067F700C36E7A /* PhotoGroupVC.m in Sources */,
 				D2B84E6E20108A4200D8A7A9 /* NextVC.m in Sources */,
+				D26B9A84202060BD00C36E7A /* PhotoCell.m in Sources */,
 				D227C251201F171A00FCEB63 /* ShopCartVC.m in Sources */,
 				D24D6C632018ACDA00EED777 /* Student.m in Sources */,
 				D227C254201F17B800FCEB63 /* ShopCell.m in Sources */,

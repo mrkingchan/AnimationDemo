@@ -23,6 +23,8 @@
 		D26B9A902021564A00C36E7A /* PreViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A8F2021564A00C36E7A /* PreViewVC.m */; };
 		D26B9A932021566000C36E7A /* PreViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A922021566000C36E7A /* PreViewCell.m */; };
 		D26B9A992021641900C36E7A /* PageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A982021641900C36E7A /* PageLayout.m */; };
+		D26B9A9C2021698A00C36E7A /* WatwerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A9B2021698A00C36E7A /* WatwerLayout.m */; };
+		D26B9A9F2021751A00C36E7A /* WaterFallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A9E2021751A00C36E7A /* WaterFallVC.m */; };
 		D2B84E3C2010895500D8A7A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B84E3B2010895500D8A7A9 /* AppDelegate.m */; };
 		D2B84E3F2010895500D8A7A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B84E3E2010895500D8A7A9 /* ViewController.m */; };
 		D2B84E422010895500D8A7A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B84E402010895500D8A7A9 /* Main.storyboard */; };
@@ -85,6 +87,10 @@
 		D26B9A922021566000C36E7A /* PreViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreViewCell.m; sourceTree = "<group>"; };
 		D26B9A972021641900C36E7A /* PageLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageLayout.h; sourceTree = "<group>"; };
 		D26B9A982021641900C36E7A /* PageLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageLayout.m; sourceTree = "<group>"; };
+		D26B9A9A2021698A00C36E7A /* WatwerLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatwerLayout.h; sourceTree = "<group>"; };
+		D26B9A9B2021698A00C36E7A /* WatwerLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatwerLayout.m; sourceTree = "<group>"; };
+		D26B9A9D2021751A00C36E7A /* WaterFallVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFallVC.h; sourceTree = "<group>"; };
+		D26B9A9E2021751A00C36E7A /* WaterFallVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFallVC.m; sourceTree = "<group>"; };
 		D2B84E372010895500D8A7A9 /* AnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B84E3A2010895500D8A7A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D2B84E3B2010895500D8A7A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -177,6 +183,10 @@
 				D26B9A8F2021564A00C36E7A /* PreViewVC.m */,
 				D26B9A972021641900C36E7A /* PageLayout.h */,
 				D26B9A982021641900C36E7A /* PageLayout.m */,
+				D26B9A9A2021698A00C36E7A /* WatwerLayout.h */,
+				D26B9A9B2021698A00C36E7A /* WatwerLayout.m */,
+				D26B9A9D2021751A00C36E7A /* WaterFallVC.h */,
+				D26B9A9E2021751A00C36E7A /* WaterFallVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -470,7 +480,9 @@
 				D26B9A87202067F700C36E7A /* PhotoGroupVC.m in Sources */,
 				D2B84E6E20108A4200D8A7A9 /* NextVC.m in Sources */,
 				D26B9A84202060BD00C36E7A /* PhotoCell.m in Sources */,
+				D26B9A9C2021698A00C36E7A /* WatwerLayout.m in Sources */,
 				D227C251201F171A00FCEB63 /* ShopCartVC.m in Sources */,
+				D26B9A9F2021751A00C36E7A /* WaterFallVC.m in Sources */,
 				D24D6C632018ACDA00EED777 /* Student.m in Sources */,
 				D227C254201F17B800FCEB63 /* ShopCell.m in Sources */,
 			);

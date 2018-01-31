@@ -16,6 +16,7 @@
 #import <MWPhoto.h>
 #import <MWPhotoProtocol.h>
 #import "PreViewVC.h"
+#import "WaterFallVC.h"
 
 @interface PhotoVC ()<MWPhotoBrowserDelegate> {
     ALAssetsLibrary *_lib;
@@ -44,8 +45,11 @@
     _photos = [NSMutableArray new];
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = NSStringFromClass([self class]);
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSStringFromClass([PhotoGroupVC class]) style:UIBarButtonItemStylePlain target:self action:@selector(next:)];
-    
+    if (!_fromGroup) {
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSStringFromClass([PhotoGroupVC class]) style:UIBarButtonItemStylePlain target:self action:@selector(next:)];
+    } else {
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSStringFromClass([WaterFallVC class]) style:UIBarButtonItemStylePlain target:self action:@selector(next:)];
+    }
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
     layout.itemSize = CGSizeMake(([UIScreen mainScreen].bounds.size.width - 10)/3.0, ([UIScreen mainScreen].bounds.size.width - 10)/3.0);
     layout.minimumLineSpacing = 5.0;
@@ -96,10 +100,14 @@
     });
 }
 
-
 - (void)next:(id)sender {
-    PhotoGroupVC *VC = [PhotoGroupVC new];
-    [self.navigationController pushViewController:VC animated:YES];
+    if (_fromGroup) {
+        PhotoGroupVC *VC = [PhotoGroupVC new];
+        [self.navigationController pushViewController:VC animated:YES];
+    } else {
+        WaterFallVC *VC = [WaterFallVC new];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
 }
 
 #pragma mark --UICollectionViewDataSource&delegate

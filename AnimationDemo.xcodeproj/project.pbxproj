@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05B3E4986E45485487A073FF /* libPods-AnimationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 249C1A02F754E440D2583542 /* libPods-AnimationDemo.a */; };
 		D227C251201F171A00FCEB63 /* ShopCartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D227C250201F171A00FCEB63 /* ShopCartVC.m */; };
 		D227C254201F17B800FCEB63 /* ShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D227C253201F17B800FCEB63 /* ShopCell.m */; };
 		D227C258201F18BA00FCEB63 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = D227C257201F18BA00FCEB63 /* add.png */; };
@@ -19,6 +20,9 @@
 		D26B9A87202067F700C36E7A /* PhotoGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A86202067F700C36E7A /* PhotoGroupVC.m */; };
 		D26B9A8A2020687400C36E7A /* GroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A892020687400C36E7A /* GroupCell.m */; };
 		D26B9A8D20206A3600C36E7A /* GroupDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A8C20206A3600C36E7A /* GroupDetailVC.m */; };
+		D26B9A902021564A00C36E7A /* PreViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A8F2021564A00C36E7A /* PreViewVC.m */; };
+		D26B9A932021566000C36E7A /* PreViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A922021566000C36E7A /* PreViewCell.m */; };
+		D26B9A992021641900C36E7A /* PageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D26B9A982021641900C36E7A /* PageLayout.m */; };
 		D2B84E3C2010895500D8A7A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B84E3B2010895500D8A7A9 /* AppDelegate.m */; };
 		D2B84E3F2010895500D8A7A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B84E3E2010895500D8A7A9 /* ViewController.m */; };
 		D2B84E422010895500D8A7A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B84E402010895500D8A7A9 /* Main.storyboard */; };
@@ -50,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		249C1A02F754E440D2583542 /* libPods-AnimationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA70C4E1490E92E459CE4F9 /* Pods-AnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D227C24F201F171A00FCEB63 /* ShopCartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopCartVC.h; sourceTree = "<group>"; };
 		D227C250201F171A00FCEB63 /* ShopCartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopCartVC.m; sourceTree = "<group>"; };
 		D227C252201F17B800FCEB63 /* ShopCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopCell.h; sourceTree = "<group>"; };
@@ -73,6 +79,12 @@
 		D26B9A892020687400C36E7A /* GroupCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupCell.m; sourceTree = "<group>"; };
 		D26B9A8B20206A3600C36E7A /* GroupDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupDetailVC.h; sourceTree = "<group>"; };
 		D26B9A8C20206A3600C36E7A /* GroupDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupDetailVC.m; sourceTree = "<group>"; };
+		D26B9A8E2021564A00C36E7A /* PreViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreViewVC.h; sourceTree = "<group>"; };
+		D26B9A8F2021564A00C36E7A /* PreViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreViewVC.m; sourceTree = "<group>"; };
+		D26B9A912021566000C36E7A /* PreViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreViewCell.h; sourceTree = "<group>"; };
+		D26B9A922021566000C36E7A /* PreViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreViewCell.m; sourceTree = "<group>"; };
+		D26B9A972021641900C36E7A /* PageLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageLayout.h; sourceTree = "<group>"; };
+		D26B9A982021641900C36E7A /* PageLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageLayout.m; sourceTree = "<group>"; };
 		D2B84E372010895500D8A7A9 /* AnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B84E3A2010895500D8A7A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D2B84E3B2010895500D8A7A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +107,7 @@
 		D2B84E7020109C7600D8A7A9 /* CircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		D2B84E722011989D00D8A7A9 /* BounceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BounceView.h; sourceTree = "<group>"; };
 		D2B84E732011989D00D8A7A9 /* BounceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BounceView.m; sourceTree = "<group>"; };
+		EE567A608472A739E29A35B9 /* Pods-AnimationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B3E4986E45485487A073FF /* libPods-AnimationDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +136,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		120957229321523BEE2B5F5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AA70C4E1490E92E459CE4F9 /* Pods-AnimationDemo.debug.xcconfig */,
+				EE567A608472A739E29A35B9 /* Pods-AnimationDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C89B4775992B3FAFA710DF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				249C1A02F754E440D2583542 /* libPods-AnimationDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D26B9A942021584600C36E7A /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				D26B9A962021585C00C36E7A /* Cells */,
+				D26B9A952021584F00C36E7A /* Controllers */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		D26B9A952021584F00C36E7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D227C24F201F171A00FCEB63 /* ShopCartVC.h */,
+				D227C250201F171A00FCEB63 /* ShopCartVC.m */,
+				D26B9A7F20205ED600C36E7A /* PhotoVC.h */,
+				D26B9A8020205ED600C36E7A /* PhotoVC.m */,
+				D26B9A85202067F700C36E7A /* PhotoGroupVC.h */,
+				D26B9A86202067F700C36E7A /* PhotoGroupVC.m */,
+				D26B9A8B20206A3600C36E7A /* GroupDetailVC.h */,
+				D26B9A8C20206A3600C36E7A /* GroupDetailVC.m */,
+				D26B9A8E2021564A00C36E7A /* PreViewVC.h */,
+				D26B9A8F2021564A00C36E7A /* PreViewVC.m */,
+				D26B9A972021641900C36E7A /* PageLayout.h */,
+				D26B9A982021641900C36E7A /* PageLayout.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D26B9A962021585C00C36E7A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D26B9A912021566000C36E7A /* PreViewCell.h */,
+				D26B9A922021566000C36E7A /* PreViewCell.m */,
+				D26B9A882020687400C36E7A /* GroupCell.h */,
+				D26B9A892020687400C36E7A /* GroupCell.m */,
+				D26B9A82202060BD00C36E7A /* PhotoCell.h */,
+				D26B9A83202060BD00C36E7A /* PhotoCell.m */,
+				D227C252201F17B800FCEB63 /* ShopCell.h */,
+				D227C253201F17B800FCEB63 /* ShopCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		D2B84E2E2010895500D8A7A9 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +203,8 @@
 				D2B84E522010895600D8A7A9 /* AnimationDemoTests */,
 				D2B84E5D2010895600D8A7A9 /* AnimationDemoUITests */,
 				D2B84E382010895500D8A7A9 /* Products */,
+				120957229321523BEE2B5F5E /* Pods */,
+				2C89B4775992B3FAFA710DF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +221,7 @@
 		D2B84E392010895500D8A7A9 /* AnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D26B9A942021584600C36E7A /* MVC */,
 				D227C257201F18BA00FCEB63 /* add.png */,
 				D2B84E3A2010895500D8A7A9 /* AppDelegate.h */,
 				D2B84E3B2010895500D8A7A9 /* AppDelegate.m */,
@@ -152,20 +229,6 @@
 				D2B84E3E2010895500D8A7A9 /* ViewController.m */,
 				D2B84E6C20108A4200D8A7A9 /* NextVC.h */,
 				D2B84E6D20108A4200D8A7A9 /* NextVC.m */,
-				D227C24F201F171A00FCEB63 /* ShopCartVC.h */,
-				D227C250201F171A00FCEB63 /* ShopCartVC.m */,
-				D26B9A7F20205ED600C36E7A /* PhotoVC.h */,
-				D26B9A8020205ED600C36E7A /* PhotoVC.m */,
-				D26B9A85202067F700C36E7A /* PhotoGroupVC.h */,
-				D26B9A86202067F700C36E7A /* PhotoGroupVC.m */,
-				D26B9A8B20206A3600C36E7A /* GroupDetailVC.h */,
-				D26B9A8C20206A3600C36E7A /* GroupDetailVC.m */,
-				D26B9A882020687400C36E7A /* GroupCell.h */,
-				D26B9A892020687400C36E7A /* GroupCell.m */,
-				D26B9A82202060BD00C36E7A /* PhotoCell.h */,
-				D26B9A83202060BD00C36E7A /* PhotoCell.m */,
-				D227C252201F17B800FCEB63 /* ShopCell.h */,
-				D227C253201F17B800FCEB63 /* ShopCell.m */,
 				D24D6C612018ACDA00EED777 /* Student.h */,
 				D24D6C622018ACDA00EED777 /* Student.m */,
 				D2B84E6F20109C7600D8A7A9 /* CircleView.h */,
@@ -212,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2B84E632010895600D8A7A9 /* Build configuration list for PBXNativeTarget "AnimationDemo" */;
 			buildPhases = (
+				042F9A97995DB35B24364D93 /* [CP] Check Pods Manifest.lock */,
 				D2B84E332010895500D8A7A9 /* Sources */,
 				D2B84E342010895500D8A7A9 /* Frameworks */,
 				D2B84E352010895500D8A7A9 /* Resources */,
+				D78CD28122C53DF9032C50D7 /* [CP] Embed Pods Frameworks */,
+				0A1A0E3B05EEF6B021400567 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,6 +400,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		042F9A97995DB35B24364D93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0A1A0E3B05EEF6B021400567 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D78CD28122C53DF9032C50D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationDemo/Pods-AnimationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D2B84E332010895500D8A7A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -341,6 +455,7 @@
 			files = (
 				D24D6C5D20186C6D00EED777 /* YesuView.m in Sources */,
 				D2B84E742011989D00D8A7A9 /* BounceView.m in Sources */,
+				D26B9A992021641900C36E7A /* PageLayout.m in Sources */,
 				D2B84E3F2010895500D8A7A9 /* ViewController.m in Sources */,
 				D26B9A8D20206A3600C36E7A /* GroupDetailVC.m in Sources */,
 				D26B9A8A2020687400C36E7A /* GroupCell.m in Sources */,
@@ -348,6 +463,8 @@
 				D24D6C602018726800EED777 /* ChartView.m in Sources */,
 				D2B84E7120109C7600D8A7A9 /* CircleView.m in Sources */,
 				D26B9A8120205ED600C36E7A /* PhotoVC.m in Sources */,
+				D26B9A902021564A00C36E7A /* PreViewVC.m in Sources */,
+				D26B9A932021566000C36E7A /* PreViewCell.m in Sources */,
 				D2B84E4A2010895500D8A7A9 /* main.m in Sources */,
 				D2B84E3C2010895500D8A7A9 /* AppDelegate.m in Sources */,
 				D26B9A87202067F700C36E7A /* PhotoGroupVC.m in Sources */,
@@ -516,6 +633,7 @@
 		};
 		D2B84E642010895600D8A7A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AA70C4E1490E92E459CE4F9 /* Pods-AnimationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +649,7 @@
 		};
 		D2B84E652010895600D8A7A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE567A608472A739E29A35B9 /* Pods-AnimationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

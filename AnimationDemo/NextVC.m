@@ -87,6 +87,7 @@
                 _pickerVC = [UIImagePickerController new];
                 _pickerVC.delegate = self;
                 _pickerVC.sourceType = i == 0 ?UIImagePickerControllerSourceTypeCamera:UIImagePickerControllerSourceTypePhotoLibrary;
+                _pickerVC.navigationItem.title = @"相机胶卷";
                 [self presentViewController:_pickerVC animated:YES completion:nil];
             }
         }];

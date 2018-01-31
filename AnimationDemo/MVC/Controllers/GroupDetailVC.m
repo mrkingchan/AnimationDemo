@@ -10,19 +10,42 @@
 #import "PhotoCell.h"
 #define kcellID @"cell"
 
-@interface GroupDetailVC ()<UICollectionViewDelegate,UICollectionViewDataSource> {
+#import "PhotoVC.h"
+
+#import <MWPhotoBrowser.h>
+#import <MWPhoto.h>
+#import <MWPhotoProtocol.h>
+
+@interface GroupDetailVC ()<UICollectionViewDelegate,UICollectionViewDataSource,MWPhotoBrowserDelegate> {
     NSMutableArray *_dataArray;
     UICollectionView *_collectionView;
+    NSMutableArray *_photos;
 }
 
 @end
 
 @implementation GroupDetailVC
 
+- (NSUInteger)numberOfPhotosInPhotoBrowser:(MWPhotoBrowser *)photoBrowser {
+    return _photos.count;
+}
+
+- (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser photoAtIndex:(NSUInteger)index {
+    if (index < _photos.count) {
+        return _photos[index];
+    }
+    return nil;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _photos = [NSMutableArray new];
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = NSStringFromClass([self class]);
+    
+    self.view.backgroundColor = [UIColor blackColor];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSStringFromClass([PhotoVC class]) style:UIBarButtonItemStylePlain target:self action:@selector(next:)];
+    
     _dataArray = [NSMutableArray new];
     if (_group) {
         [_group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
@@ -35,6 +58,12 @@
         }];
     }
     [self setUI];
+}
+
+- (void)next:(id)sender {
+    PhotoVC *VC = [PhotoVC new];
+    VC.fromGroup = YES;
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 #pragma mark --setUI
@@ -64,6 +93,25 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+    __block NSMutableArray *temArray = [NSMutableArray new];
+    [_dataArray enumerateObjectsUsingBlock:^(ALAsset *value, NSUInteger idx, BOOL * _Nonnull stop) {
+        MWPhoto *photo = [MWPhoto photoWithImage:[UIImage imageWithCGImage:[ value thumbnail]]];
+        [temArray addObject:photo];
+    }];
+    _photos = [NSMutableArray arrayWithArray:temArray];
+    MWPhotoBrowser *browser = [[MWPhotoBrowser alloc] initWithDelegate:self];
+    browser.displayActionButton = YES;
+    browser.displayNavArrows = YES;
+    browser.displaySelectionButtons = NO;
+    browser.zoomPhotosToFill = YES;
+    browser.alwaysShowControls = NO;
+    browser.enableGrid = YES;
+    browser.startOnGrid = NO;
+    browser.autoPlayOnAppear = NO;
+    browser.customImageSelectedIconName = @"ImageSelected.png";
+    browser.customImageSelectedSmallIconName = @"ImageSelectedSmall.png";
+    [browser setCurrentPhotoIndex:indexPath.row];
+    [self.navigationController pushViewController:browser animated:YES];
 }
 
 

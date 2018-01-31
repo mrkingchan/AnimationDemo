@@ -43,31 +43,38 @@
 //        [[group valueForProperty:ALAssetsGroupPropertyType] isEqualToString:ALAssetTypeVideo] ? @"Video":@"Common";
         NSNumber *type = [group valueForProperty:ALAssetsGroupPropertyType];
         NSString *typeStr = @"";
+        NSString *desStr;
         switch ([type integerValue]) {
             case 1:
                 typeStr = @"ALAssetsGroupLibrary";
+                desStr = @"相册";
                 break;
             case 2:
                 typeStr = @"ALAssetsGroupAlbum";
+                desStr = @"相册";
                 break;
             case 4:
-                typeStr = @"ALAssetsGroupLibrary";
+                typeStr = @"ALAssetsGroupEvent";
+                desStr = @"事件";
                 break;
             case 8:
                 typeStr = @"ALAssetsGroupFaces";
+                desStr = @"自拍";
                 break;
             case 16:
                 typeStr = @"ALAssetsGroupSavedPhotos";
+                desStr = @"保存";
                 break;
             case 32:
                 typeStr = @"ALAssetsGroupPhotoStream";
+                desStr = @"照片流";
                 break;
             default:
                 typeStr = @"ALAssetsGroupAll";
                 break;
         }
         NSString *name = [group valueForProperty:ALAssetsGroupPropertyName];
-        _des.text = [NSString stringWithFormat:@"count:%zd,type:%@,name:%@",group.numberOfAssets,type,name];
+        _des.text = [NSString stringWithFormat:@"count:%zd,type:%@,name:%@",group.numberOfAssets,desStr,name];
     }
 }
 

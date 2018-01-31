@@ -10,4 +10,6 @@
 
 @interface PhotoVC : UIViewController
 
+@property(nonatomic, assign) BOOL fromGroup;
+
 @end

@@ -18,8 +18,10 @@
     return self;
 }
 
+#warning 必须调用这个方法
 - (void)prepareLayout {
     [super prepareLayout];
+    
     [_attrsArray removeAllObjects];
     NSInteger count = [self.collectionView numberOfItemsInSection:0];
     for (int i = 0; i < count; i ++) {
@@ -44,14 +46,14 @@
     CGFloat rowH = (self.collectionView.frame.size.width - 5) / 2.0;
     if ((count)%6==2 || (count)%6==4) {
         return CGSizeMake(0, rows * rowH-rowH/2);
-    }else{
+    } else {
         return CGSizeMake(0, rows*rowH );
     }*/
 }
 
 //重写每个cell的layoutAttris布局属性
 -(UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewLayoutAttributes * attrs= [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+    UICollectionViewLayoutAttributes *attrs = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     CGFloat width = (self.collectionView.frame.size.width - 5.0)/2.0;
     CGFloat kGap = 5.0;
     CGFloat height = width;
@@ -73,7 +75,7 @@
         UICollectionViewLayoutAttributes *lastAttrs = _attrsArray[i-6];
         CGRect frame = lastAttrs.frame;
         frame.origin.y =  frame.origin.y +  (2 * height) + (3 * kGap);
-        attrs.frame=frame;
+        attrs.frame = frame;
     }
     return attrs;
 }
